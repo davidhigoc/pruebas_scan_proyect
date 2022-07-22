@@ -22,7 +22,7 @@ class Home extends StatelessWidget {
       ),
       body: Column(
         children: [
-          // * FIRMA
+          // * FIRMA Y GESTION
           Padding(
             padding: const EdgeInsets.all(12.0),
             child: Container(
