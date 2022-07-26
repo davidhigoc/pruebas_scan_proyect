@@ -62,6 +62,7 @@ class _SignaturePageState extends State<SignaturePage> {
                     if (_controller.isNotEmpty) {
                       final Uint8List? data = await _controller.toPngBytes();
                       if (data != null) {
+                        // ignore: use_build_context_synchronously
                         await Navigator.of(context).push(
                           MaterialPageRoute<void>(
                             builder: (BuildContext context) {

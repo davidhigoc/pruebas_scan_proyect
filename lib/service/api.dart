@@ -31,9 +31,7 @@ class GetApis {
     );
 
     var response = await http.get(url);
-
     final Company info = Company.fromJson(response.body);
-
     print("Respuesta api: ${info.depart}");
   }
 }

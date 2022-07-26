@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
 import 'package:pru_scan_project/service/api.dart';
@@ -14,14 +12,17 @@ class PeoplesCubit extends Cubit<PeoplesState> {
 
   consultPeople() async {
     loading = true;
-    final _resp = await GetApis().peapleApi();
-    if (_resp == null) {
+    List<PersonaModel>? resp = await GetApis().peapleApi();
+    // ignore: unnecessary_null_comparison
+    if (resp == null) {
       peoples = [];
       loading = false;
+      print("El mundo es hermoso");
     } else {
-      peoples = _resp;
+      peoples = resp;
       loading = false;
     }
+
     emit(PeoplesConsul());
   }
 }
