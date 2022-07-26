@@ -61,7 +61,7 @@ class _MyHomePageState extends State<ReOrder> {
                 : TabBarView(
                     children: [
                       DemoReorderableGrid(listPeople: bloc.peoples),
-                      const DemoGridBuilder(),
+                      DemoGridBuilder(listPeople: bloc.peoples),
                       const DemoGridSliver(),
                       const TestIssue24()
                     ],

@@ -3,7 +3,8 @@ import 'package:pru_scan_project/src/components/re_orden/models/people.dart';
 import 'package:reorderable_grid_view/reorderable_grid_view.dart';
 
 class DemoReorderableGrid extends StatefulWidget {
-  DemoReorderableGrid({Key? key, required this.listPeople}) : super(key: key);
+  const DemoReorderableGrid({Key? key, required this.listPeople})
+      : super(key: key);
   final List<PersonaModel> listPeople;
   @override
   State<DemoReorderableGrid> createState() => _DemoReorderableGridState();
