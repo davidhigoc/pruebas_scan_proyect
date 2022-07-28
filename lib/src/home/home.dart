@@ -44,6 +44,7 @@ class Home extends StatelessWidget {
                       alignment: WrapAlignment.start,
                       children: [
                         ElevatedButton(
+                          key: const Key("signatureButton"),
                           onPressed: () => Navigator.of(context).push(
                               MaterialPageRoute(
                                   builder: (context) => const SignaturePage())),

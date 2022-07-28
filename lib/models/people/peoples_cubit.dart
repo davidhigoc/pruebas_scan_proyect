@@ -17,7 +17,6 @@ class PeoplesCubit extends Cubit<PeoplesState> {
     if (resp == null) {
       peoples = [];
       loading = false;
-      print("El mundo es hermoso");
     } else {
       peoples = resp;
       loading = false;
