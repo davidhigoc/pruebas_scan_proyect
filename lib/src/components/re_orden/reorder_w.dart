@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pru_scan_project/models/cubit/peoples_cubit.dart';
+import 'package:pru_scan_project/models/people/peoples_cubit.dart';
 import 'package:pru_scan_project/src/components/re_orden/vistas_grid/grid_build.dart';
 import 'package:pru_scan_project/src/components/re_orden/vistas_grid/grid_count.dart';
 import 'package:pru_scan_project/src/components/re_orden/vistas_grid/grid_sliver.dart';
